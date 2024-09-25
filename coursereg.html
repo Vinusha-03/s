@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>STUDENT REGISTRATION FORM</legend>
+        <p>
+            <label>First Name</label>
+            <input type="text" required id="fname" pattern="[a-zA-Z]{3,9}" /><br><br>
+        </p>
+        <p>
+            <label>Last Name: </label>
+            <input type="text" required id="lname" pattern="[a-zA-Z]{3,9}" /><br><br>
+        </p>
+        <p>
+            <label>DOB: </label>
+            <input type="date"><br><br>
+        </p>
+        <p>
+            <label>Email: </label>
+            <input type="text" required id="email" pattern="[a-z0-9_.]+@[a-z]+.[a-z]{2,}" /><br><br>
+        </p>
+        <p>
+            <label>Password: </label>
+            <input type="password" name="password" /><br><br>
+        </p>
+        <p>
+            <label>Re-enter Password</label>
+            <input type="password" name="password" /><br><br>
+        </p>
+        <p>
+            <legend>Course Type: </legend>
+            <label>Online</label>
+            <input type="radio" required id="Online" name="Course Type"/>
+            <label>Offline</label>
+            <input type="radio" required id="Offline" name="Course Type" />
+        </p>
+        <p>
+            <legend>Course Name: </legend>
+            <select>
+                <option>Choose</option>
+                <option value="Full Stack Web Development">Full Stack Web Development</option>
+                <option value="Mern Stack Development">Mern Stack  Development</option>
+            </select>
+        </p>
+
+        <p>
+            <legend>Skills: </legend>
+            <label>css</label>
+            <input type="checkbox" /><br>
+            <label>js</label>
+            <input type="checkbox" /><br>
+            <label>html</label>
+            <input type="checkbox"  />
+        </p>
+
+       <input type="submit" />
+    </fieldset>
+    </form>
+
+    <br><br>
+    <table width="100%" border="0" align="center" cellpadding="15px" >
+        <tr bgcolor="black" align="center"></tr>
+            <td colspan="3"><center><font color="blue"><input type="button" onclick="window.location.href='index.html';" value="BACK" /></font></center></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
